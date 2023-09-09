@@ -8,19 +8,19 @@
  */
 int main(void)
 {
-	int num = 0;
+	int number = '0';
 
-	while (num <= 9)
+	while (number <= '9')
 	{
-		putchar('0' + num);
-		if (num < 9)
+		putchar(number);
+		if (number != '9')
 		{
 			putchar(',');
 			putchar(' ');
 		}
-		num++;
+		number++;
 	}
-	putchar('$');
 	putchar('\n');
+
 	return (0);
 }
