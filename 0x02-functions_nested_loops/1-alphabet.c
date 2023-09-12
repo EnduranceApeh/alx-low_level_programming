@@ -3,6 +3,7 @@
 /**
  * main - check the code
  *
+ * The print_alphabet function print alphabet from a-z
  * Return: Always 0.
  */
 void print_alphabet(void)
