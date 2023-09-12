@@ -8,15 +8,13 @@
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
+	char my_string[] = "_putchar";
+	int i = 0;
+	while (my_string[i] != '\0')
+	{
+		_putchar(my_string[i]);
+		i++;
+	}
 	_putchar('\n');
-
 	return (0);
 }
