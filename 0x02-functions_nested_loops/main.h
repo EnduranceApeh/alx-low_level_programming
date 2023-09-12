@@ -1,6 +1,6 @@
 int _putchar(char c);
 
 /**
- * A function that print all alhpabet in lower case
+ * Description: This fucntion print alphabet from a-z
  */
 void print_alphabet(void);
