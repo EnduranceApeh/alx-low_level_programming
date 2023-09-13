@@ -1,5 +1,3 @@
-#ifndef MAIN_H
-#define MAIN_H
 int _putchar(char c);
 
 /**
@@ -8,7 +6,7 @@ int _putchar(char c);
 void print_alphabet(void);
 
 /**
- * print_alphabet_x10(void) - This function print alphabet a-z 10x
+ * print_alphabet_x10 - print lowercase alphabet ten times
  */
 void print_alphabet_x10(void);
 
@@ -18,4 +16,4 @@ void print_alphabet_x10(void);
 int _islower(int c);
 
 
-#endif
+int _isalpha(int c);

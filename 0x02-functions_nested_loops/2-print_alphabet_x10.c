@@ -1,9 +1,8 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print alphabet a-z 10x
- *
- * Return: void
+ * print_alphabet_x10 - print letter a-z x10
+ * Return: type void
  */
 void print_alphabet_x10(void)
 {
