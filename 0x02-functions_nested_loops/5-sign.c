@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_sign(int n) - print signs
- * @n: recives arguement 
- * Return: return 1 if n is greater than 0, 0 if n is zero and -1 if n is less than zer0
+ * print_sign - print signs base on the numbers
+ * @n: recives arguement
+ * Return: return 1, 0 and -1
  */
 int print_sign(int n)
 {
