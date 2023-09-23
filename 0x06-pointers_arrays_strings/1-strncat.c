@@ -7,16 +7,31 @@
  * @n: number of byte
  * Return: dest
  */
+#include "main.h"
+
+/**
+ * _strncat - concatenate n bytes to another string
+ * @dest: destination
+ * @src: source
+ * @n: append n bytes
+ * Return: concatenated string
+ */
+
 char *_strncat(char *dest, char *src, int n)
 {
-	int length = strlen(dest);
-	int i;
+	int i = 0;
+	int j = 0;
 
-	for (i = 0; i < n && *src != '\0' ; i++)
+	while (dest[i] != '\0')
+		i++;
+
+	while (src[j] != src[n])
 	{
-		dest[length + i] = *src;
-		src++;
+		dest[i] = src[j];
+		i++;
+		j++;
 	}
-	dest[length + i] = '\0';
+	dest[i] = '\0';
+
 	return (dest);
 }
