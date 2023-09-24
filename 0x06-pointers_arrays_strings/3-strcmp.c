@@ -9,13 +9,25 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
+	int i, n;
 
-	while (*(s1 + i) == *(s2 + i) && *(s1 + i))
-		i++;
-
-	if (*(s2 + i))
-		return (*(s1 + i) - *(s2 + i));
-	else
-		return (0);
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
+	{
+		if (s1[i] > s2[i])
+		{
+			n = 15;
+			break;
+		}
+		else if (s1[i] < s2[i])
+		{
+			n = -15;
+			break;
+		}
+		else
+		{
+			n = 0;
+			break;
+		}
+	}
+	return (n);
 }
