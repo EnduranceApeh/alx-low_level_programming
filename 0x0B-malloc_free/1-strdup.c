@@ -12,6 +12,8 @@ char *_strdup(char *str)
 	int length = 0;
 	int i;
 
+	if (str == NULL)
+		return (NULL);
 	/* check for string length */
 	for (i = 0; str[i] != '\0'; i++)
 	{
@@ -19,12 +21,9 @@ char *_strdup(char *str)
 	}
 	/* Request for memory according to the length of string */
 	chstr = (char *) malloc(sizeof(char) * length + 1);
-	if (str == NULL)
-		return (NULL);
 	if (chstr == NULL)
 		return (NULL);
 	for (i = 0; i < length; i++)
 		chstr[i] = str[i];
-	free(chstr);
 	return (chstr);
 }
