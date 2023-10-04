@@ -19,7 +19,8 @@ char *_strdup(char *str)
 	}
 	/* Request for memory according to the length of string */
 	chstr = (char *) malloc(sizeof(char) * length + 1);
-
+	if (length == 0)
+		return (NULL);
 	if (chstr == NULL)
 		return (NULL);
 	for (i = 0; i < length; i++)
