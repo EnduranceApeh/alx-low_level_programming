@@ -21,7 +21,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
-	/* concatenate strings */
+	/* string length */
 	for (i = 0; s1[i] != '\0'; i++)
 	{
 		s1_len++;
