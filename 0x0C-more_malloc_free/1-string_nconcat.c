@@ -16,7 +16,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	s1_len = 0;
 	s2_len = 0;
 
-	if (s1 == NULL || s2 == NULL)
+	if (s1 == NULL)
+		return ("");
+	if (s2 == NULL)
 		return ("");
 	/* check for len of string */
 	for (i = 0; s1[i] != '\0'; i++)
