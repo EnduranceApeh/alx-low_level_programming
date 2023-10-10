@@ -14,15 +14,15 @@ void print_dog(struct dog *d)
 	/*check if elemt of d is NULL*/
 	if (d->name == NULL)
 	{
-		printf("Name: (nil)");
+		printf("Name: (nil)\n");
 	}
 	if (d->age <= 0)
 	{
-		printf("Age: (nil)");
+		printf("Age: (nil)\n");
 	}
 	if (d->owner == NULL)
 	{
-		printf("Owner: (nil)");
+		printf("Owner: (nil)\n");
 	}
 	/* print each eleemnt of pointer d */
 	printf("Name: %s\n", d->name);
