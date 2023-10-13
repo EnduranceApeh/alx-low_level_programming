@@ -5,7 +5,7 @@
 /**
  * print_strings - function that print string
  * @separator: comma and space
- * @n: number of arguement 
+ * @n: number of arguement
  * Return: string
  */
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -17,12 +17,13 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(strings, n);
 
 	for (i = 0; i < n; i++)
-	{	if (strings == NULL)
+	{
+		if (strings == NULL)
 		{
 			printf("(nil)");
 		}
 		printf("%s", va_arg(strings, char *));
-		if(i < n - 1 && separator != NULL)
+		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s", separator);
 		}
