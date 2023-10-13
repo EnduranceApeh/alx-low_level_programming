@@ -13,6 +13,8 @@ int sum_them_all(const unsigned int n, ...)
 	va_list mynumbers;
 
 	va_start(mynumbers, n);
+	if (n == 0)
+		return (0);
 
 	/* using loop to access each member of list */
 	for (i = 0; i < n; i++)
