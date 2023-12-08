@@ -6,10 +6,12 @@
  */
 void free_dlistint(dlistint_t *head)
 {
+	dlistint_t *tmp;
 	/* triverse through list to free */
 	while (head != NULL)
 	{
-		free(head);
+		tmp = head;
 		head = head->next;
+		free(tmp);
 	}
 }
