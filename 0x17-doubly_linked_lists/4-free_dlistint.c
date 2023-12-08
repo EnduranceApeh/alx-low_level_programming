@@ -9,8 +9,7 @@ void free_dlistint(dlistint_t *head)
 	/* triverse through list to free */
 	while (head != NULL)
 	{
-		head = head->next;
 		free(head);
+		head = head->next;
 	}
-	free(head);
 }
