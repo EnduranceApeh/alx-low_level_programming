@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL 0
 
 /**
  *_strpbrk - returns pointer to byte in s that matches
